@@ -1,0 +1,488 @@
+﻿<Window x:Class="Projekat3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projekat3"
+        mc:Ignorable="d"
+        Background="Bisque" 
+        xmlns:helix="http://helix-toolkit.org/wpf"
+        Title="MainWindow" Height="900" Width="900" >
+    <Grid>
+        <helix:HelixViewport3D x:Name="viewport1"  ShowCameraTarget="False" ShowViewCube="False" MouseRightButtonDown="viewport1_MouseDown" MouseMove="viewport1_MouseMove" Margin="10,10,0,0">
+           
+            <helix:HelixViewport3D.Children>
+                <ModelVisual3D>
+                    <ModelVisual3D.Content>
+                        <AmbientLight />
+                    </ModelVisual3D.Content>
+                </ModelVisual3D>
+            </helix:HelixViewport3D.Children>
+        </helix:HelixViewport3D>
+        <StackPanel Orientation="Horizontal">
+        <StackPanel Margin="5 20" HorizontalAlignment="Left" Orientation="Vertical">
+            <StackPanel Orientation="Horizontal">
+            <ToggleButton x:Name="Od0Do3" Height="20" Checked="Od0Do3_Checked" Unchecked="Od0Do3_Unchecked" > 
+                <ToggleButton.Style>
+                <Style TargetType="{x:Type ToggleButton}">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type ToggleButton}">
+                                <Viewbox>
+                                    <Border x:Name="Border" CornerRadius="10"
+                            Background="#FFFFFFFF"
+                            Width="40" Height="20">
+                                        <Border.Effect>
+                                            <DropShadowEffect ShadowDepth="0.5" Direction="0" Opacity="0.3" />
+                                        </Border.Effect>
+                                        <Ellipse x:Name="Ellipse" Fill="#FFFFFFFF" Stretch="Uniform"
+                                 Margin="2 1 2 1"
+                                 Stroke="Gray" StrokeThickness="0.2"
+                                 HorizontalAlignment="Stretch">
+                                            <Ellipse.Effect>
+                                                <DropShadowEffect BlurRadius="10" ShadowDepth="1" Opacity="0.3" Direction="260" />
+                                            </Ellipse.Effect>
+                                        </Ellipse>
+                                    </Border>
+                                </Viewbox>
+                                <ControlTemplate.Triggers>
+                                    <EventTrigger RoutedEvent="Checked">
+                                        <BeginStoryboard>
+                                            <Storyboard>
+                                                <ColorAnimation Storyboard.TargetName="Border"
+                                                    Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)"
+                                                    To="#00d300"
+                                                    Duration="0:0:0.1" />
+                                                <ThicknessAnimation Storyboard.TargetName="Ellipse"
+                                                        Storyboard.TargetProperty="Margin"
+                                                        To="20 1 2 1"
+                                                        Duration="0:0:0.1" />
+                                            </Storyboard>
+                                        </BeginStoryboard>
+                                    </EventTrigger>
+                                    <EventTrigger RoutedEvent="Unchecked">
+                                        <BeginStoryboard>
+                                            <Storyboard>
+                                                <ColorAnimation Storyboard.TargetName="Border"
+                                                    Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)"
+                                                    To="White"
+                                                    Duration="0:0:0.1" />
+                                                <ThicknessAnimation Storyboard.TargetName="Ellipse"
+                                                        Storyboard.TargetProperty="Margin"
+                                                        To="2 1 2 1"
+                                                        Duration="0:0:0.1" />
+                                            </Storyboard>
+                                        </BeginStoryboard>
+                                    </EventTrigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+                </ToggleButton.Style>
+               
+            </ToggleButton>
+            <Label>Sakri objekte do 3 konekcije</Label>
+
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <ToggleButton x:Name="Od3Do5" Height="20" Checked="Od3Do5_Checked" Unchecked="Od3Do5_Unchecked">
+                    <ToggleButton.Style>
+                        <Style TargetType="{x:Type ToggleButton}">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type ToggleButton}">
+                                        <Viewbox>
+                                            <Border x:Name="Border" CornerRadius="10"
+                            Background="#FFFFFFFF"
+                            Width="40" Height="20">
+                                                <Border.Effect>
+                                                    <DropShadowEffect ShadowDepth="0.5" Direction="0" Opacity="0.3" />
+                                                </Border.Effect>
+                                                <Ellipse x:Name="Ellipse" Fill="#FFFFFFFF" Stretch="Uniform"
+                                 Margin="2 1 2 1"
+                                 Stroke="Gray" StrokeThickness="0.2"
+                                 HorizontalAlignment="Stretch">
+                                                    <Ellipse.Effect>
+                                                        <DropShadowEffect BlurRadius="10" ShadowDepth="1" Opacity="0.3" Direction="260" />
+                                                    </Ellipse.Effect>
+                                                </Ellipse>
+                                            </Border>
+                                        </Viewbox>
+                                        <ControlTemplate.Triggers>
+                                            <EventTrigger RoutedEvent="Checked">
+                                                <BeginStoryboard>
+                                                    <Storyboard>
+                                                        <ColorAnimation Storyboard.TargetName="Border"
+                                                    Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)"
+                                                    To="#00d300"
+                                                    Duration="0:0:0.1" />
+                                                        <ThicknessAnimation Storyboard.TargetName="Ellipse"
+                                                        Storyboard.TargetProperty="Margin"
+                                                        To="20 1 2 1"
+                                                        Duration="0:0:0.1" />
+                                                    </Storyboard>
+                                                </BeginStoryboard>
+                                            </EventTrigger>
+                                            <EventTrigger RoutedEvent="Unchecked">
+                                                <BeginStoryboard>
+                                                    <Storyboard>
+                                                        <ColorAnimation Storyboard.TargetName="Border"
+                                                    Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)"
+                                                    To="White"
+                                                    Duration="0:0:0.1" />
+                                                        <ThicknessAnimation Storyboard.TargetName="Ellipse"
+                                                        Storyboard.TargetProperty="Margin"
+                                                        To="2 1 2 1"
+                                                        Duration="0:0:0.1" />
+                                                    </Storyboard>
+                                                </BeginStoryboard>
+                                            </EventTrigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </ToggleButton.Style>
+
+                </ToggleButton>
+                <Label>Sakri objekte izmedju 3 i 5 konekcija</Label>
+
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <ToggleButton Height="20" x:Name="Preko5" Checked="Preko5_Checked" Unchecked="Preko5_Unchecked">
+                    <ToggleButton.Style>
+                        <Style TargetType="{x:Type ToggleButton}">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type ToggleButton}">
+                                        <Viewbox>
+                                            <Border x:Name="Border" CornerRadius="10"
+                            Background="#FFFFFFFF"
+                            Width="40" Height="20">
+                                                <Border.Effect>
+                                                    <DropShadowEffect ShadowDepth="0.5" Direction="0" Opacity="0.3" />
+                                                </Border.Effect>
+                                                <Ellipse x:Name="Ellipse" Fill="#FFFFFFFF" Stretch="Uniform"
+                                 Margin="2 1 2 1"
+                                 Stroke="Gray" StrokeThickness="0.2"
+                                 HorizontalAlignment="Stretch">
+                                                    <Ellipse.Effect>
+                                                        <DropShadowEffect BlurRadius="10" ShadowDepth="1" Opacity="0.3" Direction="260" />
+                                                    </Ellipse.Effect>
+                                                </Ellipse>
+                                            </Border>
+                                        </Viewbox>
+                                        <ControlTemplate.Triggers>
+                                            <EventTrigger RoutedEvent="Checked">
+                                                <BeginStoryboard>
+                                                    <Storyboard>
+                                                        <ColorAnimation Storyboard.TargetName="Border"
+                                                    Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)"
+                                                    To="#00d300"
+                                                    Duration="0:0:0.1" />
+                                                        <ThicknessAnimation Storyboard.TargetName="Ellipse"
+                                                        Storyboard.TargetProperty="Margin"
+                                                        To="20 1 2 1"
+                                                        Duration="0:0:0.1" />
+                                                    </Storyboard>
+                                                </BeginStoryboard>
+                                            </EventTrigger>
+                                            <EventTrigger RoutedEvent="Unchecked">
+                                                <BeginStoryboard>
+                                                    <Storyboard>
+                                                        <ColorAnimation Storyboard.TargetName="Border"
+                                                    Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)"
+                                                    To="White"
+                                                    Duration="0:0:0.1" />
+                                                        <ThicknessAnimation Storyboard.TargetName="Ellipse"
+                                                        Storyboard.TargetProperty="Margin"
+                                                        To="2 1 2 1"
+                                                        Duration="0:0:0.1" />
+                                                    </Storyboard>
+                                                </BeginStoryboard>
+                                            </EventTrigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </ToggleButton.Style>
+
+                </ToggleButton>
+                <Label>Sakri objekte sa vise od 5 konekcija</Label>
+
+            </StackPanel>
+        </StackPanel>
+
+
+        <StackPanel  HorizontalAlignment="Left" Orientation="Vertical" Margin="5 20">
+                <StackPanel Orientation="Horizontal">
+                    <ToggleButton x:Name="Od0Do1" Height="20" Checked="Od0Do1_Checked" Unchecked="Od0Do1_Unchecked" >
+                        <ToggleButton.Style>
+                            <Style TargetType="{x:Type ToggleButton}">
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="{x:Type ToggleButton}">
+                                            <Viewbox>
+                                                <Border x:Name="Border" CornerRadius="10"
+                            Background="#FFFFFFFF"
+                            Width="40" Height="20">
+                                                    <Border.Effect>
+                                                        <DropShadowEffect ShadowDepth="0.5" Direction="0" Opacity="0.3" />
+                                                    </Border.Effect>
+                                                    <Ellipse x:Name="Ellipse" Fill="#FFFFFFFF" Stretch="Uniform"
+                                 Margin="2 1 2 1"
+                                 Stroke="Gray" StrokeThickness="0.2"
+                                 HorizontalAlignment="Stretch">
+                                                        <Ellipse.Effect>
+                                                            <DropShadowEffect BlurRadius="10" ShadowDepth="1" Opacity="0.3" Direction="260" />
+                                                        </Ellipse.Effect>
+                                                    </Ellipse>
+                                                </Border>
+                                            </Viewbox>
+                                            <ControlTemplate.Triggers>
+                                                <EventTrigger RoutedEvent="Checked">
+                                                    <BeginStoryboard>
+                                                        <Storyboard>
+                                                            <ColorAnimation Storyboard.TargetName="Border"
+                                                    Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)"
+                                                    To="#00d300"
+                                                    Duration="0:0:0.1" />
+                                                            <ThicknessAnimation Storyboard.TargetName="Ellipse"
+                                                        Storyboard.TargetProperty="Margin"
+                                                        To="20 1 2 1"
+                                                        Duration="0:0:0.1" />
+                                                        </Storyboard>
+                                                    </BeginStoryboard>
+                                                </EventTrigger>
+                                                <EventTrigger RoutedEvent="Unchecked">
+                                                    <BeginStoryboard>
+                                                        <Storyboard>
+                                                            <ColorAnimation Storyboard.TargetName="Border"
+                                                    Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)"
+                                                    To="White"
+                                                    Duration="0:0:0.1" />
+                                                            <ThicknessAnimation Storyboard.TargetName="Ellipse"
+                                                        Storyboard.TargetProperty="Margin"
+                                                        To="2 1 2 1"
+                                                        Duration="0:0:0.1" />
+                                                        </Storyboard>
+                                                    </BeginStoryboard>
+                                                </EventTrigger>
+                                            </ControlTemplate.Triggers>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </ToggleButton.Style>
+
+                    </ToggleButton>
+                    <Label>Sakri vod otpornosti izmedju 0 i 1</Label>
+
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <ToggleButton x:Name="Od1Do2" Height="20" Checked="Od1Do2_Checked" Unchecked="Od1Do2_Unchecked">
+                        <ToggleButton.Style>
+                            <Style TargetType="{x:Type ToggleButton}">
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="{x:Type ToggleButton}">
+                                            <Viewbox>
+                                                <Border x:Name="Border" CornerRadius="10"
+                            Background="#FFFFFFFF"
+                            Width="40" Height="20">
+                                                    <Border.Effect>
+                                                        <DropShadowEffect ShadowDepth="0.5" Direction="0" Opacity="0.3" />
+                                                    </Border.Effect>
+                                                    <Ellipse x:Name="Ellipse" Fill="#FFFFFFFF" Stretch="Uniform"
+                                 Margin="2 1 2 1"
+                                 Stroke="Gray" StrokeThickness="0.2"
+                                 HorizontalAlignment="Stretch">
+                                                        <Ellipse.Effect>
+                                                            <DropShadowEffect BlurRadius="10" ShadowDepth="1" Opacity="0.3" Direction="260" />
+                                                        </Ellipse.Effect>
+                                                    </Ellipse>
+                                                </Border>
+                                            </Viewbox>
+                                            <ControlTemplate.Triggers>
+                                                <EventTrigger RoutedEvent="Checked">
+                                                    <BeginStoryboard>
+                                                        <Storyboard>
+                                                            <ColorAnimation Storyboard.TargetName="Border"
+                                                    Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)"
+                                                    To="#00d300"
+                                                    Duration="0:0:0.1" />
+                                                            <ThicknessAnimation Storyboard.TargetName="Ellipse"
+                                                        Storyboard.TargetProperty="Margin"
+                                                        To="20 1 2 1"
+                                                        Duration="0:0:0.1" />
+                                                        </Storyboard>
+                                                    </BeginStoryboard>
+                                                </EventTrigger>
+                                                <EventTrigger RoutedEvent="Unchecked">
+                                                    <BeginStoryboard>
+                                                        <Storyboard>
+                                                            <ColorAnimation Storyboard.TargetName="Border"
+                                                    Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)"
+                                                    To="White"
+                                                    Duration="0:0:0.1" />
+                                                            <ThicknessAnimation Storyboard.TargetName="Ellipse"
+                                                        Storyboard.TargetProperty="Margin"
+                                                        To="2 1 2 1"
+                                                        Duration="0:0:0.1" />
+                                                        </Storyboard>
+                                                    </BeginStoryboard>
+                                                </EventTrigger>
+                                            </ControlTemplate.Triggers>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </ToggleButton.Style>
+
+                    </ToggleButton>
+                    <Label>Sakri vod otpornosti izmedju 1 i 2</Label>
+
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <ToggleButton Height="20" x:Name="Preko2" Checked="Preko2_Checked" Unchecked="Preko2_Unchecked">
+                        <ToggleButton.Style>
+                            <Style TargetType="{x:Type ToggleButton}">
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="{x:Type ToggleButton}">
+                                            <Viewbox>
+                                                <Border x:Name="Border" CornerRadius="10"
+                            Background="#FFFFFFFF"
+                            Width="40" Height="20">
+                                                    <Border.Effect>
+                                                        <DropShadowEffect ShadowDepth="0.5" Direction="0" Opacity="0.3" />
+                                                    </Border.Effect>
+                                                    <Ellipse x:Name="Ellipse" Fill="#FFFFFFFF" Stretch="Uniform"
+                                 Margin="2 1 2 1"
+                                 Stroke="Gray" StrokeThickness="0.2"
+                                 HorizontalAlignment="Stretch">
+                                                        <Ellipse.Effect>
+                                                            <DropShadowEffect BlurRadius="10" ShadowDepth="1" Opacity="0.3" Direction="260" />
+                                                        </Ellipse.Effect>
+                                                    </Ellipse>
+                                                </Border>
+                                            </Viewbox>
+                                            <ControlTemplate.Triggers>
+                                                <EventTrigger RoutedEvent="Checked">
+                                                    <BeginStoryboard>
+                                                        <Storyboard>
+                                                            <ColorAnimation Storyboard.TargetName="Border"
+                                                    Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)"
+                                                    To="#00d300"
+                                                    Duration="0:0:0.1" />
+                                                            <ThicknessAnimation Storyboard.TargetName="Ellipse"
+                                                        Storyboard.TargetProperty="Margin"
+                                                        To="20 1 2 1"
+                                                        Duration="0:0:0.1" />
+                                                        </Storyboard>
+                                                    </BeginStoryboard>
+                                                </EventTrigger>
+                                                <EventTrigger RoutedEvent="Unchecked">
+                                                    <BeginStoryboard>
+                                                        <Storyboard>
+                                                            <ColorAnimation Storyboard.TargetName="Border"
+                                                    Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)"
+                                                    To="White"
+                                                    Duration="0:0:0.1" />
+                                                            <ThicknessAnimation Storyboard.TargetName="Ellipse"
+                                                        Storyboard.TargetProperty="Margin"
+                                                        To="2 1 2 1"
+                                                        Duration="0:0:0.1" />
+                                                        </Storyboard>
+                                                    </BeginStoryboard>
+                                                </EventTrigger>
+                                            </ControlTemplate.Triggers>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </ToggleButton.Style>
+
+                    </ToggleButton>
+                    <Label>Sakri vod otpornosti vece od 2</Label>
+
+                </StackPanel>
+            </StackPanel>
+
+
+            <StackPanel  HorizontalAlignment="Left" Orientation="Vertical" Margin="5 20">
+                <StackPanel Orientation="Horizontal">
+                    <ToggleButton x:Name="Otvoren" Height="20" Checked="Otvoren_Checked" Unchecked="Otvoren_Unchecked">
+                        <ToggleButton.Style>
+                            <Style TargetType="{x:Type ToggleButton}">
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="{x:Type ToggleButton}">
+                                            <Viewbox>
+                                                <Border x:Name="Border" CornerRadius="10"
+                            Background="#FFFFFFFF"
+                            Width="40" Height="20">
+                                                    <Border.Effect>
+                                                        <DropShadowEffect ShadowDepth="0.5" Direction="0" Opacity="0.3" />
+                                                    </Border.Effect>
+                                                    <Ellipse x:Name="Ellipse" Fill="#FFFFFFFF" Stretch="Uniform"
+                                 Margin="2 1 2 1"
+                                 Stroke="Gray" StrokeThickness="0.2"
+                                 HorizontalAlignment="Stretch">
+                                                        <Ellipse.Effect>
+                                                            <DropShadowEffect BlurRadius="10" ShadowDepth="1" Opacity="0.3" Direction="260" />
+                                                        </Ellipse.Effect>
+                                                    </Ellipse>
+                                                </Border>
+                                            </Viewbox>
+                                            <ControlTemplate.Triggers>
+                                                <EventTrigger RoutedEvent="Checked">
+                                                    <BeginStoryboard>
+                                                        <Storyboard>
+                                                            <ColorAnimation Storyboard.TargetName="Border"
+                                                    Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)"
+                                                    To="#00d300"
+                                                    Duration="0:0:0.1" />
+                                                            <ThicknessAnimation Storyboard.TargetName="Ellipse"
+                                                        Storyboard.TargetProperty="Margin"
+                                                        To="20 1 2 1"
+                                                        Duration="0:0:0.1" />
+                                                        </Storyboard>
+                                                    </BeginStoryboard>
+                                                </EventTrigger>
+                                                <EventTrigger RoutedEvent="Unchecked">
+                                                    <BeginStoryboard>
+                                                        <Storyboard>
+                                                            <ColorAnimation Storyboard.TargetName="Border"
+                                                    Storyboard.TargetProperty="(Border.Background).(SolidColorBrush.Color)"
+                                                    To="White"
+                                                    Duration="0:0:0.1" />
+                                                            <ThicknessAnimation Storyboard.TargetName="Ellipse"
+                                                        Storyboard.TargetProperty="Margin"
+                                                        To="2 1 2 1"
+                                                        Duration="0:0:0.1" />
+                                                        </Storyboard>
+                                                    </BeginStoryboard>
+                                                </EventTrigger>
+                                            </ControlTemplate.Triggers>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </ToggleButton.Style>
+
+                    </ToggleButton>
+                    <Label>Sakri aktivni deo mreze</Label>
+
+                </StackPanel>
+
+            </StackPanel>
+
+
+
+        </StackPanel>
+    </Grid>
+ 
+</Window>
