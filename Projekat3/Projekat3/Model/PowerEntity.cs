@@ -15,11 +15,12 @@ namespace Projekat3.Model
         private double boardx;
         private double boardz;
 
+    
+
         public PowerEntity()
         {
 
         }
-
         public long Id
         {
             get
@@ -32,7 +33,6 @@ namespace Projekat3.Model
                 id = value;
             }
         }
-
         public string Name
         {
             get
@@ -45,7 +45,6 @@ namespace Projekat3.Model
                 name = value;
             }
         }
-
         public double X
         {
             get
@@ -58,7 +57,6 @@ namespace Projekat3.Model
                 x = value;
             }
         }
-
         public double Y
         {
             get
@@ -83,7 +81,6 @@ namespace Projekat3.Model
                 boardx = value;
             }
         }
-
         public double BoardZ
         {
             get
@@ -96,5 +93,6 @@ namespace Projekat3.Model
                 boardz = value;
             }
         }
+        
     }
 }

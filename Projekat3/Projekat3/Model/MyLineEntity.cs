@@ -7,10 +7,8 @@ using System.Windows;
 
 namespace Projekat3.Model
 {
-    public class MyLineEntity:PowerEntity
+    public class MyLineEntity : PowerEntity
     {
-        private long id;
-        private string name;
         private bool isUnderground;
         private float r;
         private string conductorMaterial;
@@ -19,7 +17,7 @@ namespace Projekat3.Model
         private long firstEnd;
         private long secondEnd;
         private List<Point> vertices;
-
+    
         public MyLineEntity()
         {
 

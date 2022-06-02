@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "9Id6QHu7VWtFq8yQDrEdpZnUJY5Wjspd3dAbX1gUp+Pyw70k/1ebKmDo76Mf5ac1gflplF2BajtPc7X6xFne9w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Milan\\Desktop\\Proj Files\\Projekat-master\\Projekat3\\ConsoleApp1\\ConsoleApp1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Milan\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.18\\microsoft.netcore.app.host.win-x64.3.1.18.nupkg.sha512"
+  ],
+  "logs": []
+}
