@@ -14,7 +14,7 @@ namespace Projekat3.Model
         private double y;
         private double boardx;
         private double boardz;
-
+    
     
 
         public PowerEntity()

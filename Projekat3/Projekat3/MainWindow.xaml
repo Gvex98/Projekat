@@ -23,7 +23,8 @@
         </helix:HelixViewport3D>
         
         <StackPanel Orientation="Horizontal">
-        <StackPanel Margin="5 20" HorizontalAlignment="Left" Orientation="Vertical">
+        <StackPanel Margin="15 20" HorizontalAlignment="Center" Orientation="Vertical" >
+            <Label>SAKRIVANJE ENTITETA NA OSNOVU BROJA KONEKCIJA:</Label>
             <StackPanel Orientation="Horizontal">
             <ToggleButton x:Name="Od0Do3" Height="20" Checked="Od0Do3_Checked" Unchecked="Od0Do3_Unchecked" >
                         <ToggleButton.Style>
@@ -84,7 +85,7 @@
                             </Style>
                         </ToggleButton.Style>
                     </ToggleButton>
-            <Label>Sakri objekte do 3 konekcije</Label>
+            <Label>Sakrij objekte do 3 konekcije</Label>
 
             </StackPanel>
             <StackPanel Orientation="Horizontal">
@@ -148,7 +149,7 @@
                     </ToggleButton.Style>
 
                 </ToggleButton>
-                <Label>Sakri objekte izmedju 3 i 5 konekcija</Label>
+                <Label>Sakrij objekte izmedju 3 i 5 konekcija</Label>
 
             </StackPanel>
             <StackPanel Orientation="Horizontal">
@@ -212,13 +213,14 @@
                     </ToggleButton.Style>
 
                 </ToggleButton>
-                <Label>Sakri objekte sa vise od 5 konekcija</Label>
+                <Label>Sakrij objekte sa vise od 5 konekcija</Label>
 
             </StackPanel>
         </StackPanel>
 
 
-        <StackPanel  HorizontalAlignment="Left" Orientation="Vertical" Margin="5 20">
+        <StackPanel  HorizontalAlignment="Left" Orientation="Vertical" Margin="15 20">
+                <Label>SAKRIVANJE VODOVA NA OSNOVU OTPORNOSTI:</Label>
                 <StackPanel Orientation="Horizontal">
                     <ToggleButton x:Name="Od0Do1" Height="20" Checked="Od0Do1_Checked" Unchecked="Od0Do1_Unchecked" >
                         <ToggleButton.Style>
@@ -280,7 +282,7 @@
                         </ToggleButton.Style>
 
                     </ToggleButton>
-                    <Label>Sakri vod otpornosti izmedju 0 i 1</Label>
+                    <Label>Sakrij vod otpornosti između 0 i 1</Label>
 
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
@@ -344,7 +346,7 @@
                         </ToggleButton.Style>
 
                     </ToggleButton>
-                    <Label>Sakri vod otpornosti izmedju 1 i 2</Label>
+                    <Label>Sakrij vod otpornosti između 1 i 2</Label>
 
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
@@ -408,13 +410,14 @@
                         </ToggleButton.Style>
 
                     </ToggleButton>
-                    <Label>Sakri vod otpornosti vece od 2</Label>
+                    <Label>Sakrij vod otpornosti veće od 2</Label>
 
                 </StackPanel>
             </StackPanel>
 
 
-            <StackPanel  HorizontalAlignment="Left" Orientation="Vertical" Margin="5 20">
+            <StackPanel  HorizontalAlignment="Left" Orientation="Vertical" Margin="15 20">
+                <Label>SAKRIVANJE AKTIVNOG DELA MREŽE:</Label>
                 <StackPanel Orientation="Horizontal">
                     <ToggleButton x:Name="Otvoren" Height="20" Checked="Otvoren_Checked" Unchecked="Otvoren_Unchecked">
                         <ToggleButton.Style>
@@ -476,7 +479,7 @@
                         </ToggleButton.Style>
 
                     </ToggleButton>
-                    <Label>Sakri aktivni deo mreze</Label>
+                    <Label>Sakrij aktivni deo mreže</Label>
 
                 </StackPanel>
 

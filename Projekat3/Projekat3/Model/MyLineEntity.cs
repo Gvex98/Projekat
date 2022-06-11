@@ -7,7 +7,7 @@ using System.Windows;
 
 namespace Projekat3.Model
 {
-    public class MyLineEntity : PowerEntity
+    public class LineEntity : PowerEntity
     {
         private bool isUnderground;
         private float r;
@@ -18,7 +18,8 @@ namespace Projekat3.Model
         private long secondEnd;
         private List<Point> vertices;
     
-        public MyLineEntity()
+    
+        public LineEntity()
         {
 
         }

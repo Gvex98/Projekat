@@ -138,3 +138,23 @@ C:\Users\Milan\Desktop\Proj Files\Projekat-master - Copy\Projekat3\Projekat3\obj
 C:\Users\Milan\Desktop\Proj Files\Projekat-master - Copy\Projekat3\Projekat3\obj\Debug\Projekat3.csproj.CopyComplete
 C:\Users\Milan\Desktop\Proj Files\Projekat-master - Copy\Projekat3\Projekat3\obj\Debug\Projekat3.exe
 C:\Users\Milan\Desktop\Proj Files\Projekat-master - Copy\Projekat3\Projekat3\obj\Debug\Projekat3.pdb
+C:\Users\Milan\Desktop\PROJEKAT\Projekat\Projekat3\Projekat3\bin\Debug\Projekat3.exe.config
+C:\Users\Milan\Desktop\PROJEKAT\Projekat\Projekat3\Projekat3\bin\Debug\Projekat3.exe
+C:\Users\Milan\Desktop\PROJEKAT\Projekat\Projekat3\Projekat3\bin\Debug\Projekat3.pdb
+C:\Users\Milan\Desktop\PROJEKAT\Projekat\Projekat3\Projekat3\bin\Debug\HelixToolkit.dll
+C:\Users\Milan\Desktop\PROJEKAT\Projekat\Projekat3\Projekat3\bin\Debug\HelixToolkit.Wpf.dll
+C:\Users\Milan\Desktop\PROJEKAT\Projekat\Projekat3\Projekat3\bin\Debug\HelixToolkit.xml
+C:\Users\Milan\Desktop\PROJEKAT\Projekat\Projekat3\Projekat3\bin\Debug\HelixToolkit.Wpf.xml
+C:\Users\Milan\Desktop\PROJEKAT\Projekat\Projekat3\Projekat3\obj\Debug\Projekat3.csproj.AssemblyReference.cache
+C:\Users\Milan\Desktop\PROJEKAT\Projekat\Projekat3\Projekat3\obj\Debug\MainWindow.g.cs
+C:\Users\Milan\Desktop\PROJEKAT\Projekat\Projekat3\Projekat3\obj\Debug\App.g.cs
+C:\Users\Milan\Desktop\PROJEKAT\Projekat\Projekat3\Projekat3\obj\Debug\Projekat3_MarkupCompile.cache
+C:\Users\Milan\Desktop\PROJEKAT\Projekat\Projekat3\Projekat3\obj\Debug\Projekat3_MarkupCompile.lref
+C:\Users\Milan\Desktop\PROJEKAT\Projekat\Projekat3\Projekat3\obj\Debug\MainWindow.baml
+C:\Users\Milan\Desktop\PROJEKAT\Projekat\Projekat3\Projekat3\obj\Debug\Projekat3.g.resources
+C:\Users\Milan\Desktop\PROJEKAT\Projekat\Projekat3\Projekat3\obj\Debug\Projekat3.Properties.Resources.resources
+C:\Users\Milan\Desktop\PROJEKAT\Projekat\Projekat3\Projekat3\obj\Debug\Projekat3.csproj.GenerateResource.cache
+C:\Users\Milan\Desktop\PROJEKAT\Projekat\Projekat3\Projekat3\obj\Debug\Projekat3.csproj.CoreCompileInputs.cache
+C:\Users\Milan\Desktop\PROJEKAT\Projekat\Projekat3\Projekat3\obj\Debug\Projekat3.csproj.CopyComplete
+C:\Users\Milan\Desktop\PROJEKAT\Projekat\Projekat3\Projekat3\obj\Debug\Projekat3.exe
+C:\Users\Milan\Desktop\PROJEKAT\Projekat\Projekat3\Projekat3\obj\Debug\Projekat3.pdb

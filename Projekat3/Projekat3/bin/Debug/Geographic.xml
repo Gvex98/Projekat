@@ -28670,7 +28670,7 @@
         </Point>
       </Vertices>
     </LineEntity>
-    <LineEntity>
+     <LineEntity>
       <Id>35126</Id>
       <Name>SEC_137438958224</Name>
       <IsUnderground>false</IsUnderground>
@@ -28685,13 +28685,10 @@
           <X>411460.535231187</X>
           <Y>5017665.8507269</Y>
         </Point>
-        <Point>
-          <X>411600.89269725</X>
-          <Y>5017707.27606627</Y>
-        </Point>
       </Vertices>
-    </LineEntity>
-    <LineEntity>
+     </LineEntity>
+    
+<LineEntity>
       <Id>34069</Id>
       <Name>SEC_137438957166</Name>
       <IsUnderground>true</IsUnderground>
