@@ -72,7 +72,7 @@ namespace Projekat3
             
             ConvertPointsAndDraw();
             DrawLines();
-            Console.WriteLine();
+            
             
         }
 
@@ -100,10 +100,7 @@ namespace Projekat3
 
         public void LoadSubstations()
         {
-
             xmlNodeList = xmlDocument.DocumentElement.SelectNodes("/NetworkModel/Substations/SubstationEntity");
-            
-            
             foreach (XmlNode xmlNode in xmlNodeList)
             {
                 SubstationEntity sub = new SubstationEntity();
@@ -111,35 +108,17 @@ namespace Projekat3
                 sub.Name = xmlNode.SelectSingleNode("Name").InnerText;
                 sub.X = double.Parse(xmlNode.SelectSingleNode("X").InnerText);
                 sub.Y = double.Parse(xmlNode.SelectSingleNode("Y").InnerText);
-
                 double convertedx, convertedy;
                 ToLatLon(sub.X, sub.Y, 34, out convertedx, out convertedy);
-                
                 if (convertedx >= 45.2325 && convertedx <= 45.277031)
                 {
                     if (convertedy >= 19.793909 && convertedy <= 19.894459)
                     {
-                        subs.Add(sub);
-
-                        Point p = new Point();
-                        p.X = convertedx;
-                        p.Y = convertedy;
-                        newpoints.Add(new PointID(p, sub.Id));
-                        //newpointsrecnik.Add(sub.Id, p);
-
-                       
-                        double boardz = CalculateBoardZ(convertedx);
-                        double boardx = CalculateBoardX(convertedy);
-                        
-                        sub.BoardZ = boardz;
-                        sub.BoardX = boardx;
                         elements.Add(sub);
                         allelements.Add(sub);
-
                     }
                 }
             }
-
         }
 
         public void ConvertPointsAndDraw()
@@ -1162,14 +1141,8 @@ namespace Projekat3
                 {
                     ModelUIElement3D model = viewport1.Children[i+3] as ModelUIElement3D;
                     model.Visibility = Visibility.Hidden;
-                  
-                    
-                    
                 }
             }
-           
-           
-
         }
 
 
